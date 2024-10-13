@@ -8,6 +8,6 @@ services:
     image: assistant-js
     container_name: assistant-js
     ports:
-      - "9595:5050"
+      - "9595:10000"
     env_file:
       - ./.env
