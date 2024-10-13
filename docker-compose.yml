@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.deploy
+    image: assistant-js
+    container_name: assistant-js
+    ports:
+      - "9595:5050"
+    env_file:
+      - ./.env
